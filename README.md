@@ -1,5 +1,5 @@
 # phraseware
-A Diceware inspired C# password generator
+A Diceware inspired C# command-line password generator
 
 Passphrase home page: <a href="http://world.std.com/~reinhold/diceware.html">http://world.std.com/~reinhold/diceware.html</a>
 
@@ -8,6 +8,15 @@ Wikipedia: <a href="http://en.wikipedia.org/wiki/Diceware">http://en.wikipedia.o
 Had a couple hours to burn and wanted to work on something random (pun intended).  Read an interesting forum post last night about a password generation algorithm call Diceware. It not difficult nowadays to create tough passwords but they are rarely if ever rememberable.
 
 So thought I'd whip one together for fun.  I'm not a cryptologist or a mathematician for that matter. It's really simple but  works.  The randomness of the numbers feels like it could be better.  Will have to calculate the maths another day.
+
+To use:
+
+Clone the repo, and build.  I used Xamarin to write this, so I just ran it from bin/Debug under the solution folder. I had no need at this time to set up a full build process.  To run from where ever you saved it, open a terminal and from that directory:
+
+```
+mono Phraseware.exe
+```
+
 
 Example output:
 ```
