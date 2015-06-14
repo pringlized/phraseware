@@ -1,15 +1,16 @@
 # phraseware
-A Diceware inspired C# command-line password generator
+A Diceware inspired command-line password generator in python and C#
 
-Passphrase home page: <a href="http://world.std.com/~reinhold/diceware.html">http://world.std.com/~reinhold/diceware.html</a>
+Diceware home page: <a href="http://world.std.com/~reinhold/diceware.html">http://world.std.com/~reinhold/diceware.html</a>
 
 Wikipedia: <a href="http://en.wikipedia.org/wiki/Diceware">http://en.wikipedia.org/wiki/Diceware</a>
 
-Had a couple hours to burn and wanted to work on something random (pun intended).  Read an interesting forum post last night about a password generation algorithm call Diceware. It not difficult nowadays to create tough passwords but they are rarely if ever rememberable.
+Had a couple hours to burn and wanted to work on something random (pun intended).  Read something interesting about a password generation algorithm call Diceware. Thought about it and, it's not really difficult nowadays to create tough passwords but they are rarely if ever rememberable.
 
-So thought I'd whip one together for fun.  I'm not a cryptologist or a mathematician for that matter. It's really simple but  works.  The randomness of the numbers feels like it could be better.  Will have to calculate the maths another day.
+So I thought I'd whip one together for fun.  I'm not a cryptologist or a mathematician for that matter. It's really simple but works.  Haven't tested the true entroy of the random numbers generated, but it does create some interesting and unique pass phrases.  I'll have to calculate the "maths" another day.
 
-### In C#
+
+### C-Sharp
 
 Clone the repo, and build.  I used Xamarin to write this, so I just ran it from bin/Debug under the solution folder. I had no need at this time to set up a full build process.  To run from where ever you saved it, open a terminal and from that directory:
 
@@ -18,13 +19,13 @@ $ mono Phraseware.exe
 ```
 
 
-### Python:
+### Python
 ```
 $ python phraseware.py
 ```
 
 
-Example output:
+#### Example output
 ```
 Let's make a Diceware inspired password...
 How many words do you want to generate (between 5 & 12):
@@ -33,11 +34,10 @@ Your phrase:  olav ninth earn nancy occur rear radon
 ```
 
 Interesting ways I might improve it:
-- Set minimum & maximum word lengths
-- Expand the individual seed dictionary size
-- Mix and match portions of languages other than english
+- Abilty to change language desired & ability to mix and match portions of languages
 - Allow for Caps at individual or certain locations
 - Insert characters at chosen or random locations
+- Set minimum & maximum word lengths
 
 Future plans:
-- Whip together a GUI in Mono for cross platform usage
+- Whip together a cross platform GUI
