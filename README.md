@@ -7,7 +7,7 @@ Wikipedia: <a href="http://en.wikipedia.org/wiki/Diceware">http://en.wikipedia.o
 
 Had a couple hours to burn and wanted to work on something random (pun intended).  Read something interesting about a password generation algorithm call Diceware. Thought about it and, it's not really difficult nowadays to create tough passwords but they are rarely if ever rememberable.
 
-So I thought I'd whip one together for fun.  I'm not a cryptologist or a mathematician for that matter. It's really simple but works.  Haven't tested the true entroy of the random numbers generated, but it does create some interesting and unique pass phrases.  I'll have to calculate the "maths" another day.
+So I thought I'd whip one together for fun.  I'm not a cryptologist or a mathematician for that matter. It's really simple but works.  Haven't tested the true entropy of the random numbers generated, but it does create some interesting and unique pass phrases.  I'll have to calculate the "maths" another day.
 
 
 ### C-Sharp
@@ -28,14 +28,17 @@ $ python phraseware.py
 #### Example output
 ```
 Let's make a Diceware inspired password...
-How many words do you want to generate (between 5 & 12):
-7
-Your phrase:  olav ninth earn nancy occur rear radon
+------------------------------------------
+How many words do you want to use [5 - 12]: 7
+
+Your phrase:  buck lava libido await waxen levi tour
+Phrase length: 39
+------------------------------------------
 ```
 
-Interesting ways I might improve it:
+Possible ways to improve:
 - Abilty to change language desired & ability to mix and match portions of languages
-- Allow for Caps at individual or certain locations
+- Allow for caps at individual or certain locations
 - Insert characters at chosen or random locations
 - Set minimum & maximum word lengths
 
